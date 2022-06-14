@@ -10,7 +10,7 @@ function Header(){
                     <a>Personal</a>
                 </div>
                 <div className="navbar2">
-                    <li>Home</li>
+                    <li class="text-slate-500">Home</li>
                     <li>About Us</li>
                     <li>Services</li>
                 </div>
@@ -19,6 +19,9 @@ function Header(){
                 </div>
             </div>
             </Container>
+            <h1 className="text-3xl font-bold underline">
+      Hello world!
+    </h1>
         </>
     )
 }
