@@ -1,27 +1,27 @@
 import { Container } from "@mui/system";
 import React from "react";
-
 function Header(){
     return(
         <>
         <Container fluid>
             <div className="navbar">
                 <div>
-                    <a>Personal</a>
+                    <li>Personal</li>
                 </div>
                 <div className="navbar2">
-                    <li class="text-slate-500">Home</li>
+                    <li>Home</li>
                     <li>About Us</li>
                     <li>Services</li>
                 </div>
-                <div>
-                    <li>Download</li>
+                <div className="btn-bar">
+                    <li>
+                    <div class="wrapper">
+                        <a href="#" class="fancy-button bg-gradient1"><span><i class="fa fa-wheelchair-alt"></i>Download</span></a>
+                    </div>
+                    </li>
                 </div>
             </div>
-            </Container>
-            <h1 className="text-3xl font-bold underline">
-      Hello world!
-    </h1>
+            </Container>           
         </>
     )
 }
