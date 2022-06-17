@@ -16,7 +16,7 @@ function Header(){
                 <div className="btn-bar">
                     <li>
                     <div class="wrapper">
-                        <a href="#" class="fancy-button bg-gradient1"><span><i class="fa fa-wheelchair-alt"></i>Download</span></a>
+                        <a href="#" class="fancy-button bg-gradient1"><span><i class="fa fa-wheelchair-alt"></i>Contact Us</span></a>
                     </div>
                     </li>
                 </div>
