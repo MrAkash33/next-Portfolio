@@ -67,6 +67,15 @@ a {
   justify-content: space-around;
   padding: 15px 0px;
   align-items: center;
+  background: #fffd3038;
+  border-radius: 185px;
+  margin: 20px 0px;
+  background: rgba(255, 255, 255, 0.2);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(5px);
+-webkit-backdrop-filter: blur(5px);
+border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
 .navbar2 {
@@ -84,9 +93,9 @@ li {
 /* bg shortcodes */
 .bg-gradient1 span, .bg-gradient1:before {
   background: #52a0fd;
-  background: -moz-linear-gradient(left, #52a0fd 0%, #00e2fa 80%, #00e2fa 100%);
-  background: -webkit-linear-gradient(left, #52a0fd 0%, #00e2fa 80%, #00e2fa 100%);
-  background: linear-gradient(to right, #52a0fd 0%, #00e2fa 80%, #00e2fa 100%);
+  background: -moz-linear-gradient(left, #000000  0%, #00e2fa 80%, #00e2fa 100%);
+  background: -webkit-linear-gradient(left, #000000  0%, #00e2fa 80%, #00e2fa 100%);
+  background: linear-gradient(to right, #000000  0%, #00e2fa 80%, #00e2fa 100%);
 }
 /* General */
 a {
@@ -106,10 +115,12 @@ a:hover, a:focus, a:active {
   position: relative;
 }
 .title h1 {
+  font-family: 'cool';
   font-size: 130px;
   letter-spacing: 12px;
-  line-height: 146px;
+  line-height: 134px;
   text-align: center;  
+  font-weight: 600;
 }
 .fancy-button:before {
   content: '';
@@ -171,3 +182,45 @@ a:hover, a:focus, a:active {
   filter: blur(10px) brightness(0.95);
   transition: all 0.2s ease-out;
 }
+.sideWrapper::before {
+  z-index: 0;
+  content: '';
+  position: absolute;
+  display: block;
+  width: 500px;
+  height: 500px;
+  opacity: 0.1;
+  filter: blur(40px);
+  left: -79px;
+  top: 240px;
+  background-repeat: no-repeat;
+  background-image: url("data:image/svg+xml;utf8, %3Csvg width=%22100%25%22 height=%22100%25%22 viewBox=%220 0 1000 1000%22 xmlns=%22http:%2F%2Fwww.w3.org%2F2000%2Fsvg%22 %3E %3Cdefs%3E %3ClinearGradient id=%22linearGradientId%22 gradientTransform=%22rotate(60 0.5 0.5)%22%3E %3Cstop offset=%220%25%22 stop-color=%22%2308AEEA%22 %2F%3E %3Cstop offset=%22100%25%22 stop-color=%22%232af598%22 %2F%3E %3C%2FlinearGradient%3E %3CclipPath id=%22shape%22%3E %3Cpath fill=%22currentColor%22 d=%22M792.5%2C700Q731%2C900%2C507%2C888Q283%2C876%2C210.5%2C688Q138%2C500%2C210%2C311.5Q282%2C123%2C475%2C165.5Q668%2C208%2C761%2C354Q854%2C500%2C792.5%2C700Z%22%3E%3C%2Fpath%3E %3C%2FclipPath%3E %3C%2Fdefs%3E %3Cg clip-path=%22url(%23shape)%22%3E %3Cpath fill=%22url(%23linearGradientId)%22 d=%22M792.5%2C700Q731%2C900%2C507%2C888Q283%2C876%2C210.5%2C688Q138%2C500%2C210%2C311.5Q282%2C123%2C475%2C165.5Q668%2C208%2C761%2C354Q854%2C500%2C792.5%2C700Z%22 %2F%3E %3C%2Fg%3E %3C%2Fsvg%3E");
+}
+.sideWrapper::after {
+  z-index: 0;
+  content: '';
+  position: absolute;
+  display: block;
+  width: 500px;
+  height: 500px;
+  opacity: 0.1;
+  filter: blur(90px);
+  left: 481px;
+  top: 30px;
+  background-repeat: no-repeat;
+  background-image: url("data:image/svg+xml;utf8, %3Csvg width=%22100%25%22 height=%22100%25%22 viewBox=%220 0 1000 1000%22 xmlns=%22http:%2F%2Fwww.w3.org%2F2000%2Fsvg%22 %3E %3Cdefs%3E %3ClinearGradient id=%22linearGradientId%22 gradientTransform=%22rotate(-45 0.5 0.5)%22%3E %3Cstop offset=%220%25%22 stop-color=%22%23FFE53B%22 %2F%3E %3Cstop offset=%22100%25%22 stop-color=%22%23FF2525%22 %2F%3E %3C%2FlinearGradient%3E %3CclipPath id=%22shape%22%3E %3Cpath fill=%22currentColor%22 d=%22M836.5%2C613.5Q813%2C727%2C725%2C825Q637%2C923%2C501%2C919.5Q365%2C916%2C238%2C849.5Q111%2C783%2C96%2C641.5Q81%2C500%2C154%2C401Q227%2C302%2C306%2C224.5Q385%2C147%2C489.5%2C179Q594%2C211%2C715.5%2C233Q837%2C255%2C848.5%2C377.5Q860%2C500%2C836.5%2C613.5Z%22%3E%3C%2Fpath%3E %3C%2FclipPath%3E %3C%2Fdefs%3E %3Cg clip-path=%22url(%23shape)%22%3E %3Cpath fill=%22url(%23linearGradientId)%22 d=%22M836.5%2C613.5Q813%2C727%2C725%2C825Q637%2C923%2C501%2C919.5Q365%2C916%2C238%2C849.5Q111%2C783%2C96%2C641.5Q81%2C500%2C154%2C401Q227%2C302%2C306%2C224.5Q385%2C147%2C489.5%2C179Q594%2C211%2C715.5%2C233Q837%2C255%2C848.5%2C377.5Q860%2C500%2C836.5%2C613.5Z%22 %2F%3E %3C%2Fg%3E %3C%2Fsvg%3E");
+}
+.mypic::before {
+  content: '';
+  width: 500px;
+  height: 580px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: absolute;
+  right: 100px;
+  display: block;
+  margin: 210px 0px 80px 17px;
+  background-image: url("data:image/svg+xml;utf8, %3Csvg width=%22100%25%22 height=%22100%25%22 viewBox=%220 0 1000 1000%22 xmlns=%22http:%2F%2Fwww.w3.org%2F2000%2Fsvg%22 %3E %3Cdefs%3E %3ClinearGradient id=%22linearGradientId%22 gradientTransform=%22rotate(15 0.5 0.5)%22%3E %3Cstop offset=%220%25%22 stop-color=%22%23000000%22 %2F%3E %3Cstop offset=%2250%25%22 stop-color=%22%2300e2fa%22 %2F%3E %3Cstop offset=%22100%25%22 stop-color=%22%2300e2fa%22 %2F%3E %3C%2FlinearGradient%3E %3CclipPath id=%22shape%22%3E %3Cpath fill=%22currentColor%22 d=%22M946%2C646Q901%2C792%2C774%2C872Q647%2C952%2C499%2C955.5Q351%2C959%2C236.5%2C867Q122%2C775%2C130.5%2C637.5Q139%2C500%2C162%2C385.5Q185%2C271%2C287%2C215Q389%2C159%2C508.5%2C132.5Q628%2C106%2C764.5%2C157.5Q901%2C209%2C946%2C354.5Q991%2C500%2C946%2C646Z%22%3E%3C%2Fpath%3E %3C%2FclipPath%3E %3C%2Fdefs%3E %3Cg clip-path=%22url(%23shape)%22%3E %3Cpath fill=%22url(%23linearGradientId)%22 d=%22M946%2C646Q901%2C792%2C774%2C872Q647%2C952%2C499%2C955.5Q351%2C959%2C236.5%2C867Q122%2C775%2C130.5%2C637.5Q139%2C500%2C162%2C385.5Q185%2C271%2C287%2C215Q389%2C159%2C508.5%2C132.5Q628%2C106%2C764.5%2C157.5Q901%2C209%2C946%2C354.5Q991%2C500%2C946%2C646Z%22 %2F%3E %3C%2Fg%3E %3C%2Fsvg%3E");
+  backdrop-filter: blur(5px);
+}
+
