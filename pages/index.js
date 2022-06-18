@@ -9,13 +9,19 @@ export default function Home() {
           <Grid item xs={8} style={{ margin: 'auto' }} className="sideWrapper">
             <div className="title">
               <Container>
-                <h1>Hy ! I Am <br></br> <span style={{color:'#fca61f'}}>Akash</span></h1>
-                <h3 style={{ textAlign: 'center' }}>Lorem Ipsum is simply dummy text of the printing and typesetting industry. <br></br> Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, <br></br> when an unknown printer took a galley of type and scrambled it to make a <br></br> type specimen book.  It has survived not only five centuries.</h3>
+                <h1>Hy! I Am <br></br> <span style={{ color: '#fca61f' }}>Akash</span></h1>
+                <h3 style={{ textAlign: 'center' }}>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</h3>
               </Container>
             </div>
           </Grid>
           <Grid item xs={4} className="mypic">
-            <Image src={MyImage} layout="responsive" />
+            <div className="mypic4">
+              <div className="mypic3">
+                <div className="mypic2">
+                  <Image src={MyImage} layout="responsive" />
+                </div>
+              </div>
+            </div>
           </Grid>
         </Grid>
       </section>
